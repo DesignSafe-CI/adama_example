@@ -5,7 +5,7 @@ adamalib:
   ports:
     - "8889:8888"
   environment:
-    PASSWORD: adamalib
+    PASSWORD: designsafe
     USE_HTTP: 1
   volumes:
     - .:/adamalib
