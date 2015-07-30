@@ -17,7 +17,7 @@ Using adamalib in Docker
 This repository includes a ``Dockerfile`` and a ``docker-compose.yml``
 file, which allows a zero installation version of ``adamalib``.
 
-The only requirement is Docker_ and `docker-compose`_:
+The only requirements are Docker_ and `docker-compose`_:
 
 .. code-block:: bash
 
