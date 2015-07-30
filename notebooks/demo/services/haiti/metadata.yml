@@ -1,0 +1,44 @@
+---
+name: haiti
+version: 0.1
+type: query
+main_module: services.haiti.main.py
+description: |
+  Wrap of the Haiti Earthquake database. On January 12, 2010 an
+  earthquake ravaged Haiti (USGS, 2010). In the aftermath of the
+  earthquake, a team of professors and students from Purdue
+  University, the University of Washington, and the University of
+  Kansas went to Haiti. The goal of the team was to evaluate the
+  Priority Index proposed by Hassan and Sözen (1997).
+icon: nees.png
+
+authors:
+  - name: Walter Moreira
+    email: wmoreira@tacc.utexas.edu
+    sponsor_organization_name: "University of Texas"
+    sponsor_uri: "utexas.edu"
+
+endpoints:
+  /search:
+    description: Query database by building id
+    parameters:
+      - name: building
+        description: Identifier of the building
+        type: string
+        required: true
+        default: A001
+  /list:
+    description: List all rows in the database
+    parameters: []
+
+sources:
+  - title: "The Haiti Earthquake Database"
+    description: |
+      The goal of the team was to evaluate the Priority Index proposed
+      by Hassan and Sözen (1997).
+    last_modified: "2010-12-21T00:00:00"
+    sponsor_organization_name: "Purdue University"
+    sponsor_uri: "http://www.purdue.edu/"
+    provider_name: "Nathaniel Sedra"
+    provider_email: "sedra@example.com"
+    uri: "https://nees.org/dataview/spreadsheet/haiti"
