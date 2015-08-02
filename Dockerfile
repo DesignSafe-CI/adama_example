@@ -8,6 +8,7 @@ RUN pip install -U pip
 RUN pip install -U requests[security]
 RUN pip uninstall -y six
 RUN pip install six
+RUN apt-get build-dep -y python-matplotlib
 RUN pip install -r requirements.txt
 RUN python setup.py develop
 
