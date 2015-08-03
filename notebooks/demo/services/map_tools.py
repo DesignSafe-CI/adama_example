@@ -52,8 +52,10 @@ def map_display(data,
             infowindow_{i}.open(map, marker_{i});
             if (lastWindow) {{ 
                 lastWindow.close();
+                lastWindow = null;
+            }} else {{
+                lastWindow = infowindow_{i};
             }}
-            lastWindow = infowindow_{i};
       }});
     """
     js_init = """
